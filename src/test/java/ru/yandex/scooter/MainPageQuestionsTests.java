@@ -1,6 +1,6 @@
 package ru.yandex.scooter;
 
-import PageObject.MainPage;
+import pageobject.MainPage;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -42,7 +42,7 @@ public class MainPageQuestionsTests extends BaseTest {
         String actualQuestion = mainPage.clickQuestion(index);
         String actualAnswer = mainPage.answerDisplayed(index);
 
-        Assert.assertEquals("Check that we click on right question", actualQuestion, question);
-        Assert.assertEquals("Check that we see right answer", actualAnswer, answer);
+        Assert.assertEquals("Check that we click on right question", question, actualQuestion);
+        Assert.assertEquals("Check that we see right answer", answer, actualAnswer);
     }
 }

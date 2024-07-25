@@ -1,7 +1,7 @@
 package ru.yandex.scooter;
 
-import PageObject.*;
-import PageObject.Constants.OrderButton;
+import pageobject.*;
+import pageobject.constants.OrderButton;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
